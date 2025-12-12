@@ -27,7 +27,8 @@ var upload = document.querySelector(".upload");
 
 var imageInput = document.createElement("input");
 imageInput.type = "file";
-imageInput.accept = ".jpeg,.png,.gif";
+imageInput.accept = "image/jpeg,image/png,image/gif";
+
 
 document.querySelectorAll(".input_holder").forEach((element) => {
 
