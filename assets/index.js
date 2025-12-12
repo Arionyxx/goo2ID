@@ -25,12 +25,7 @@ document.querySelectorAll(".selector_option").forEach((option) => {
 
 var upload = document.querySelector(".upload");
 
-var imageInput = document.createElement("input");
-imageInput.type = "file";
-imageInput.accept = "image/jpeg,image/png,image/gif";
-imageInput.style.display = 'none';
-document.body.appendChild(imageInput);
-
+var imageInput = document.getElementById("imageInput");
 
 document.querySelectorAll(".input_holder").forEach((element) => {
 
@@ -41,10 +36,6 @@ document.querySelectorAll(".input_holder").forEach((element) => {
 
 });
 
-upload.addEventListener('click', () => {
-    imageInput.click();
-    upload.classList.remove("error_shown")
-});
 
 imageInput.addEventListener('change', (event) => {
 
